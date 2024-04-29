@@ -25,6 +25,7 @@ describe("Login test", ()=>{
     cy.xpath('(//button[contains(@type, "submit")])[2]').click();
     cy.xpath('(//a[contains(@id, "testproceed")])').click() //Proceed
     cy.wait(9000) 
+    cy.wait(4000)
 
     //feedback screen
     cy.wait(6000)
