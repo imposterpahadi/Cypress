@@ -28,6 +28,8 @@ describe("Login test", ()=>{
     cy.wait(4000)
 
     //feedback screen
+    //feedback screen
+    //feedback screen
     cy.wait(6000)
     cy.xpath('(//span[contains(@class, "no-back")])[5]').click()
     cy.xpath('(//button[contains(@type, "submit")])[1]').click()
