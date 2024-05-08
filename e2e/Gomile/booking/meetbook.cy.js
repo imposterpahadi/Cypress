@@ -18,10 +18,10 @@ describe("Login test", ()=>{
         cy.wait(1000)
         cy.xpath('(//a[contains(@class, "mob-view-padding")])[1]').click()
         cy.xpath('(//div[contains(@id, "listing")])').find('.blue-button').eq(3).click();      
-        // cy.xpath('(//button[contains(@class, "plusOne")])').click({ multiple: true })  // Plus one Quantity
-        // cy.wait(2000)
-        // cy.xpath('(//button[contains(@class, "minusOne")])').click({ multiple: true }) // Minus one Quantity
-        //cy.wait(3000) 
+        cy.xpath('(//button[contains(@class, "plusOne")])').click({ multiple: true })  // Plus one Quantity
+        cy.wait(2000)
+        cy.xpath('(//button[contains(@class, "minusOne")])').click({ multiple: true }) // Minus one Quantity
+        cy.wait(3000) 
 
         cy.xpath('(//input[contains(@id, "datepicker")])').click({multiple: true })
         cy.wait(10000)
